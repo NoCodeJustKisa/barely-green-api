@@ -1,0 +1,50 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>i love maneater from lethal company</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="left-panel">
+    <form id="apiForm">
+      <div class="form-section credentials">
+        <div class="input-group">
+          <input type="text" id="idInstance" placeholder="idInstance" required>
+          <input type="text" id="apiTokenInstance" placeholder="apiTokenInstance" required>
+        </div>
+        <div class="button-group">
+          <button type="button" id="getSettings" disabled>getSettings</button>
+          <button type="button" id="getStateInstance" disabled>getStateInstance</button>
+        </div>
+      </div>
+
+      <div class="form-section message">
+        <div class="input-group">
+          <input type="text" id="chatId" placeholder="chatId" required>
+          <textarea id="message" placeholder="message" required></textarea>
+        </div>
+        <button type="button" id="sendMessage" disabled>sendMessage</button>
+      </div>
+
+      <div class="form-section file">
+        <div class="input-group">
+          <input type="text" id="fileChatId" placeholder="chatId" required>
+          <input type="text" id="urlFile" placeholder="urlFile" required>
+          <input type="text" id="fileName" placeholder="fileName" required>
+        </div>
+        <button type="button" id="sendFileByUrl" disabled>sendFileByUrl</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="right-panel">
+    <div class="response-area">
+      <h3>Ответ:</h3>
+      <textarea id="responseArea" readonly></textarea>
+    </div>
+  </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
